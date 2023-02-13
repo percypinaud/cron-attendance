@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Send request to API
         run: |
-          curl -X POST ${{ secrets.ENDPOINT }} \
+          curl -L -f -X POST ${{ secrets.ENDPOINT }} \
           -H "Authorization: ${{ secrets.KEY }}" \
           -H "Content-Type: application/json" \
           -d '{ "uuid": "pc", "lat": 0, "lng": 0, "codigo_modalidad": "TR" }'

@@ -2,11 +2,11 @@ name: attendance
 
 on:
   schedule:
-    - cron: '25 7 * * 1-5'
+    - cron: '30 7 * * 1-5'
     - cron: '30 12 * * 1-4'
-    - cron: '45 13 * * 1-4'
-    - cron: '0 18 * * 1-4'
+    - cron: '0 14 * * 1-4'
     - cron: '0 13 * * 5'
+    - cron: '0 18 * * 1-4'
 jobs:
   post_to_api:
     runs-on: ubuntu-latest
